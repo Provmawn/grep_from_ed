@@ -26,8 +26,8 @@ The challenge with this was figuring out what everything did because the names f
 Learning how to use GDB really helped with seeing how everything works sequentially. In the original source code there is an
 `unsigned int*` called `zero` and this is the key to understanding the whole program. A file is first read from
 `void filename(int comm)` and saved into `file` and then opened. When `append` is called it calls `putline` which writes
-a line from the file to abuffer and returns `tline` which is equal to this: `tline += (((lp-linebuf)+03)>>1)&077776;`.
-This ia basically taking the length of a line from the file adding 3 then dividing by 2 then making sure it is even
+a line from the file to a buffer and returns `tline` which is equal to this: `tline += (((lp-linebuf)+03)>>1)&077776;`.
+This is basically taking the length of a line from the file adding 3 then dividing by 2 then making sure it is even
 and not past a max. This number is stored in `zero` and the same thing is done for each line. In my sample file
 `csgo_commands` the values I got from `zero` were "0, 2, 8, 26, 38, 50, 50, 58, 70, 82, 92, 104, 114". These values 
 are later decoded from a call to `print` which calls `_getline` which calls `getblock` and is get block the line 
