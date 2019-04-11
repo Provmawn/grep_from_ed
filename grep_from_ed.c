@@ -108,7 +108,7 @@ void newline(void) {
 	if ((c = getchr()) == '\n' || c == EOF) { return; }
 }
 void filename(int comm) {
-	char *p1 = file, *p2 = file;
+	char *p1 = file;
 	int c;
 	count = 0;
 	while ((c = getchr()) == ' ');
@@ -116,7 +116,6 @@ void filename(int comm) {
 		*p1++ = c;
 	} while ((c = getchr()) != '\n');
 	*p1++ = 0;
-        while (*p1++ = *p2++);
 }
 int getchr(void) {
 	if (lastc=peekc) {
