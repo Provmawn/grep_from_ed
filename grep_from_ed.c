@@ -31,6 +31,7 @@ long count;
 char buf[MAX];
 int bufp = 0;
 int main(int argc, char *argv[]) {
+	if (argc != 3) { exit(0); }
 	zero = (unsigned *)malloc(nlall*sizeof(unsigned));
 	init();
         snprintf(buf, MAX, "%s%c%c%s%c", argv[2], '\n', '/', argv[1], '\n');
