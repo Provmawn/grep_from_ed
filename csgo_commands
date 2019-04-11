@@ -1,0 +1,11 @@
+sv_cheats 1
+mp_ignore_round_win_conditions 0 
+sv_enablebunnyhopping 1
+sv_autobunnyhopping 1
+sv_staminamax 0
+sv_staminajumpcost 0
+sv_staminalandcost 0
+sv_accelerate 10
+sv_airaccelerate 800
+sv_infinite_ammo 1
+buddah
