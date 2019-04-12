@@ -1,8 +1,8 @@
 # -*- Makefile -*- 
-all: main
+all: grep_from_ed
 
 grep_from_ed: grep_from_ed.c func.h
 	gcc -g -w -o grep_from_ed grep_from_ed.c func.h
 
 clean:
-	rm main
+	rm grep_from_ed
