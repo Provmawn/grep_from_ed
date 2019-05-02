@@ -1,13 +1,19 @@
 # Grep from Ed
 In this project I try to create the grep command from ed source code just like how Ken Thompson did in one evening
 ## Installing
+
+First update apt
+```
+sudo apt-get update
+```
+
 Make sure you have `gcc` installed.
 ```
 sudo apt-get install gcc
 ```
 Make user you have 'make` installed
 ```
-sudo apt-get install build essentials
+sudo apt-get install make
 ```
 Then simply grab the files and place them all in the same directory then type
 ```
