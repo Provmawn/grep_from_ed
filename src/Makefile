@@ -1,7 +1,7 @@
 # -*- Makefile -*- 
 all: grep
 
-grep: grep ../include/*.h
+grep: grep.c ../include/*.h
 	gcc -g -w -I../include/ -o grep grep.c
 
 clean:
