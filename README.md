@@ -24,7 +24,7 @@ and you should have an exectuable .elf file.
 ## How to use it
 The regular expression handling was taken from ed along with printing and file editing. To use it just type
 ```
-ed_from_grep search file
+./grep search file
 ```
 
 # Source Code Explanation
